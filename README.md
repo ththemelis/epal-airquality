@@ -9,7 +9,7 @@
 Οι μετρήσεις αποθηκεύονται σε βάση δεδομένων και προβάλλονται, με την μορφή διαγραμμάτων, στη διεύθυνση https://clnt-2gym-kastor.kas.sch.gr:3000/d/LPjZPh8nz/poioteta-aera?orgId=1&refresh=1m
 
 ## Υλικό και λογισμικό που χρησιμοποιήθηκε
-Για την κατασκευή χρησιμοποιήθηκαν τα παρακάτω υλικά:
+Για την δημιουργία της συσκευής χρησιμοποιήθηκαν τα παρακάτω υλικά:
 1. <a href="https://www.wemos.cc/en/latest/d1/d1_mini.html" target="_blank">ESP8266 (WeMos Mini)</a>
 2. <a href="https://wiki.seeedstudio.com/Grove-Laser_PM2.5_Sensor-HM3301/" target="_blank">Grove - Laser PM2.5 Sensor (HM3301)</a>
 3. <a href="https://wiki.seeedstudio.com/Grove-Multichannel_Gas_Sensor/" target="_blank">Grove - Multichannel Gas Sensor</a>
