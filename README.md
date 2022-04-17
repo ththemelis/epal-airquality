@@ -2,7 +2,7 @@
 
 <img src="images/epalair.jpg" alt="Συσκευή μέτρησης ποιότητας αέρα">
 
-Η συσκευή μέτρησης ποιότητας αέρα έχει την δυαντότητα λήψης και καταγραφής των παρακάτω μεγαθών του αέρα:
+Η συσκευή μέτρησης ποιότητας αέρα έχει την δυνατότητα λήψης και καταγραφής των παρακάτω μεγεθών του αέρα:
 1. Θερμοκρασία αέρα
 2. Υγρασία αέρα
 3. Συγκέντρωση μονοξειδίου του άνθρακα
@@ -16,7 +16,7 @@
 1. <a href="https://www.wemos.cc/en/latest/d1/d1_mini.html">ESP8266 (WeMos Mini)</a>
 2. <a href="https://wiki.seeedstudio.com/Grove-Laser_PM2.5_Sensor-HM3301/">Grove - Laser PM2.5 Sensor (HM3301)</a>
 3. <a href="https://wiki.seeedstudio.com/Grove-Multichannel_Gas_Sensor/">Grove - Multichannel Gas Sensor</a>
-4. <a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi 4 (Λειτουργεί ως διακομιστής αποθήκευσης και προβολής δεδομένων)</a>
+4. <a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi 4 (Λειτουργεί ως διακομιστής αποθήκευσης και προβολής των δεδομένων)</a>
 
 Για την αποθήκευση και προβολή των δεδομένων χρησιμοποιήθηκαν τα παρακάτω λογισμικά:
 1. Βάση δεδομένων (<a href="https://www.influxdata.com/" target="_blank">InfluxDB</a>)

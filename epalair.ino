@@ -55,14 +55,24 @@ void getData() {
   }
 
   co=gas.measure_CO();
-  Serial.print("Συγκέντρωησ μονοξειδίου του άνθρακα ");
+  Serial.print("Συγκέντρωσης μονοξειδίου του άνθρακα ");
   if (co>=0) {
     Serial.print(co);
     Serial.println(" ppm");
   }
   else {
-    Serial.print("invalid");
+    Serial.print("Σφάλμα μέτρησης CO");
   }  
+
+  no2 = gas.measure_NO2();
+  Serial.print("The concentration of NO2 is ");
+  if(c>=0) {
+    Serial.print(c);
+    Serial.println(" ppm");      
+  }
+  else { 
+    Serial.print("Σφάλμα μέτρησης NO2");
+  }
 }
 
 void setup(){
