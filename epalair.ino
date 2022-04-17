@@ -12,7 +12,7 @@ ESP8266WiFiMulti wifiMulti; // Αντικείμενο πελάτη σύνδεσ�
 
 int pm1_0=0, pm2_5=0, pm10_0=0; // Μεταβλητές αποθήκευσης των μετρήσεων των αισθητήρα σωματιδίων
 float temperature=0, humidity=0; // Μεταβλητές για την αποθήκευση της θερμοκρασίας και της υγρασίας
-float co=0;
+float co=0, no2=0;
 
 InfluxDBClient client(INFLUXDB_URL, INFLUXDB_ORG, INFLUXDB_BUCKET, INFLUXDB_TOKEN, InfluxDbCloud2CACert);
 
@@ -55,20 +55,22 @@ void getData() {
   }
 
   co=gas.measure_CO();
-  Serial.print("Συγκέντρωσης μονοξειδίου του άνθρακα ");
+  co=co * 0.0409 * 28.01; // Μετατροπή ppm σε μg/m3
+  Serial.print("Συγκέντρωση μονοξειδίου του άνθρακα ");
   if (co>=0) {
     Serial.print(co);
-    Serial.println(" ppm");
+    Serial.println(" μg/m3");
   }
   else {
     Serial.print("Σφάλμα μέτρησης CO");
   }  
 
-  no2 = gas.measure_NO2();
-  Serial.print("The concentration of NO2 is ");
-  if(c>=0) {
-    Serial.print(c);
-    Serial.println(" ppm");      
+  no2=gas.measure_NO2();
+  no2=no2 * 0.0409 * 46.01; // Μετατροπή ppm σε μg/m3
+  Serial.print("Συγκέντρωση διοξειδίου του αζώτου ");
+  if(no2>=0) {
+    Serial.print(no2);
+    Serial.println(" μg/m3");      
   }
   else { 
     Serial.print("Σφάλμα μέτρησης NO2");
