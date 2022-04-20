@@ -12,7 +12,7 @@ ESP8266WiFiMulti wifiMulti; // Αντικείμενο πελάτη σύνδεσ�
 
 int pm1_0=0, pm2_5=0, pm10_0=0; // Μεταβλητές αποθήκευσης των μετρήσεων των αισθητήρα σωματιδίων
 float temperature=0, humidity=0; // Μεταβλητές για την αποθήκευση της θερμοκρασίας και της υγρασίας
-float co=0, no2=0;
+float co=0, no2=0, coug=0, no2ug=0;
 
 InfluxDBClient client(INFLUXDB_URL, INFLUXDB_ORG, INFLUXDB_BUCKET, INFLUXDB_TOKEN, InfluxDbCloud2CACert);
 
@@ -49,28 +49,32 @@ void getData() {
     humidity=bme280.readFloatHumidity();
     Serial.print("Υγρασία: ");
     Serial.println(humidity, 2);  
-    Serial.print(" Θερμοκρασία: ");
+    Serial.print("Θερμοκρασία: ");
     Serial.println(temperature, 2);
     delay(50);    
   }
 
   co=gas.measure_CO();
-  co=co * 0.0409 * 28.01; // Μετατροπή ppm σε μg/m3
-  Serial.print("Συγκέντρωση μονοξειδίου του άνθρακα ");
-  if (co>=0) {
+  coug=co * 0.0409 * 28.01; // Μετατροπή ppm σε μg/m3
+  if (coug>=0) {
+    Serial.print("Συγκέντρωση μονοξειδίου του άνθρακα ");
+    Serial.print(coug);
+    Serial.print(" μg/m3 - ");
     Serial.print(co);
-    Serial.println(" μg/m3");
+    Serial.println(" ppm");
   }
   else {
     Serial.print("Σφάλμα μέτρησης CO");
   }  
 
   no2=gas.measure_NO2();
-  no2=no2 * 0.0409 * 46.01; // Μετατροπή ppm σε μg/m3
-  Serial.print("Συγκέντρωση διοξειδίου του αζώτου ");
-  if(no2>=0) {
+  no2ug=no2 * 0.0409 * 46.01; // Μετατροπή ppm σε μg/m3
+  if(no2ug>=0) {
+    Serial.print("Συγκέντρωση διοξειδίου του αζώτου ");    
+    Serial.print(no2ug);
+    Serial.print(" μg/m3 - ");
     Serial.print(no2);
-    Serial.println(" μg/m3");      
+    Serial.println(" ppm");    
   }
   else { 
     Serial.print("Σφάλμα μέτρησης NO2");
@@ -84,6 +88,8 @@ void setup(){
   // Σύνδεση στο δίκτυο WiFi
   WiFi.mode(WIFI_STA);
   wifiMulti.addAP(WIFI_SSID, WIFI_PASSWORD);
+  wifiMulti.addAP(WIFI_SSID1, WIFI_PASSWORD1);
+  wifiMulti.addAP(WIFI_SSID2, WIFI_PASSWORD2);
 
   Serial.print("Σύνδεση στο wifi ");
   Serial.print(WIFI_SSID);
@@ -116,12 +122,19 @@ void loop(){
   sensor.clearFields();
 
   getData();
-  sensor.addField("pm1.0", pm1_0);
-  sensor.addField("pm2.5", pm2_5);
-  sensor.addField("pm10.0", pm10_0);
+  if (pm1_0 != 0)
+    sensor.addField("pm1.0", pm1_0);
+  if (pm2_5 != 0)    
+    sensor.addField("pm2.5", pm2_5);
+  if (pm10_0 != 0)
+    sensor.addField("pm10.0", pm10_0);
+  
   sensor.addField("temperature", temperature);
   sensor.addField("humidity", humidity);
   sensor.addField("CO", co);
+  sensor.addField("COug", coug);
+  sensor.addField("NO2", no2);
+  sensor.addField("NO2ug", no2ug);
 
   Serial.print("Δεδομένα προς την βάση δεδομένων: ");
   Serial.println(sensor.toLineProtocol());

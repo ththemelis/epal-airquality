@@ -17,6 +17,7 @@
 2. <a href="https://wiki.seeedstudio.com/Grove-Laser_PM2.5_Sensor-HM3301/">Grove - Laser PM2.5 Sensor (HM3301)</a>
 3. <a href="https://wiki.seeedstudio.com/Grove-Multichannel_Gas_Sensor/">Grove - Multichannel Gas Sensor</a>
 4. <a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi 4 (Λειτουργεί ως διακομιστής αποθήκευσης και προβολής των δεδομένων)</a>
+5. Breadboard και καλώδια σύνδεσης
 
 Για την αποθήκευση και προβολή των δεδομένων χρησιμοποιήθηκαν τα παρακάτω λογισμικά:
 1. Βάση δεδομένων (<a href="https://www.influxdata.com/" target="_blank">InfluxDB</a>)
