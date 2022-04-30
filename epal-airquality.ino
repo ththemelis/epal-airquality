@@ -88,8 +88,8 @@ void setup(){
   // Σύνδεση στο δίκτυο WiFi
   WiFi.mode(WIFI_STA);
   wifiMulti.addAP(WIFI_SSID, WIFI_PASSWORD);
-  wifiMulti.addAP(WIFI_SSID1, WIFI_PASSWORD1);
-  wifiMulti.addAP(WIFI_SSID2, WIFI_PASSWORD2);
+//  wifiMulti.addAP(WIFI_SSID1, WIFI_PASSWORD1);
+//  wifiMulti.addAP(WIFI_SSID2, WIFI_PASSWORD2);
 
   Serial.print("Σύνδεση στο wifi ");
   Serial.print(WIFI_SSID);
