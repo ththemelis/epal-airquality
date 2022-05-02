@@ -24,13 +24,12 @@
 παρακάτω συνδέσμους, μπορούμε να δούμε περισσότερες πληροφορίες για
 διάφορους δείκτες ποιότητας του αέρα.
 
--   [[https://ec.europa.eu/environment/air/quality/standards.htm]{.underline}](https://ec.europa.eu/environment/air/quality/standards.htm)
+-   https://ec.europa.eu/environment/air/quality/standards.htm
 
--   
+-   https://www.airlab.edu.gr/index.php?option=com_content&view=article&id=74&Itemid=104&lang=el
 
-<https://www.airlab.edu.gr/index.php?option=com_content&view=article&id=74&Itemid=104&lang=el>Οι
-μετρήσεις αποθηκεύονται σε βάση δεδομένων και προβάλλονται, με την μορφή
-διαγραμμάτων, στη διεύθυνση
+Οι μετρήσεις αποθηκεύονται σε βάση δεδομένων και προβάλλονται, με την
+μορφή διαγραμμάτων, στη διεύθυνση
 <https://clnt-2gym-kastor.kas.sch.gr:3000/dashboards>
 
 # Εφαρμογές και υλικά που χρησιμοποιήθηκαν
