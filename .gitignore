@@ -2,3 +2,4 @@ params.h
 *.tmp
 *.docx
 *.ini
+*.json
