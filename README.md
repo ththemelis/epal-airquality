@@ -26,10 +26,11 @@
 
 -   [[https://ec.europa.eu/environment/air/quality/standards.htm]{.underline}](https://ec.europa.eu/environment/air/quality/standards.htm)
 
--   [[https://www.airlab.edu.gr/index.php?option=com_content&view=article&id=74&Itemid=104&lang=el]{.underline}](https://www.airlab.edu.gr/index.php?option=com_content&view=article&id=74&Itemid=104&lang=el)
+-   
 
-Οι μετρήσεις αποθηκεύονται σε βάση δεδομένων και προβάλλονται, με την
-μορφή διαγραμμάτων, στη διεύθυνση
+<https://www.airlab.edu.gr/index.php?option=com_content&view=article&id=74&Itemid=104&lang=el>Οι
+μετρήσεις αποθηκεύονται σε βάση δεδομένων και προβάλλονται, με την μορφή
+διαγραμμάτων, στη διεύθυνση
 <https://clnt-2gym-kastor.kas.sch.gr:3000/dashboards>
 
 # Εφαρμογές και υλικά που χρησιμοποιήθηκαν
@@ -55,11 +56,12 @@
 Για την αποθήκευση και προβολή των δεδομένων χρησιμοποιήθηκαν τα
 παρακάτω λογισμικά:
 
--   Προγραμματισμός του ESP8266 με το Arduino IDE
+-   Προγραμματισμός του ESP8266 με το [Arduino IDE](Arduino%20IDE)
 
--   Αποθήκευση των μετρήσεων στην βάση δεδομένων InfluxDB
+-   Αποθήκευση των μετρήσεων στην βάση δεδομένων
+    [InfluxDB](https://www.influxdata.com/)
 
--   Προβολή γραφημάτων με το Grafana
+-   Προβολή γραφημάτων με το [Grafana](https://grafana.com/)
 
 -   Τα παραπάνω λογισμικά εγκαταστάθηκαν και παραμετροποιήθηκαν
     κατάλληλα στο Raspberry Pi 4
