@@ -1,15 +1,13 @@
-# Μετρητής ποιότητας αέρα στο σχολικό περιβάλλον
-
-![](images/epalair.jpg)
-
-## Σύντομη περιγραφή
+# Συσκευή μέτρησης της ποιότητας του αέρα
 
 Η συσκευή μέτρησης ποιότητας αέρα είναι μια συσκευή η οποία έχει την
 δυνατότητα να λαμβάνει και να καταγράφει τις μετρήσεις που επηρεάζουν
 την ποιότητα του αέρα που αναπνέουμε. Η συσκευή είναι τοποθετημένη μέσα
-στο σχολικό κτίριο του ΕΠΑΛ Καστοριάς και πραγματοποιεί τις μέτρηση κάθε
-ένα λεπτό. Παρακάτω μπορούμε να δούμε τα χαρακτηριστικά του αέρα που
-έχει τη δυνατότητα να μετρήσει η συσκευή.
+στο σχολικό κτίριο του ΕΠΑΛ Καστοριάς και πραγματοποιεί μετρήσεις κάθε
+ένα λεπτό.
+
+Παρακάτω μπορούμε να δούμε τα χαρακτηριστικά του αέρα που έχει τη
+δυνατότητα να μετρήσει η συσκευή.
 
 -   Θερμοκρασία του αέρα
 
@@ -26,27 +24,29 @@
 παρακάτω συνδέσμους, μπορούμε να δούμε περισσότερες πληροφορίες για
 διάφορους δείκτες ποιότητας του αέρα.
 
--   <https://ec.europa.eu/environment/air/quality/standards.htm>
+-   [[https://ec.europa.eu/environment/air/quality/standards.htm]{.underline}](https://ec.europa.eu/environment/air/quality/standards.htm)
 
--   <https://www.airlab.edu.gr/index.php?option=com_content&view=article&id=74&Itemid=104&lang=el>
-
--   <https://www.airnow.gov/aqi/aqi-basics/>
+-   [[https://www.airlab.edu.gr/index.php?option=com_content&view=article&id=74&Itemid=104&lang=el]{.underline}](https://www.airlab.edu.gr/index.php?option=com_content&view=article&id=74&Itemid=104&lang=el)
 
 Οι μετρήσεις αποθηκεύονται σε βάση δεδομένων και προβάλλονται, με την
 μορφή διαγραμμάτων, στη διεύθυνση
-<https://clnt-2gym-kastor.kas.sch.gr:3000/d/LPjZPh8nz/poioteta-aera?orgId=1&refresh=1m>
+<https://clnt-2gym-kastor.kas.sch.gr:3000/dashboards>
 
-## Εφαρμογές και υλικά που χρησιμοποιήθηκαν
+# Εφαρμογές και υλικά που χρησιμοποιήθηκαν
 
 Για την δημιουργία της συσκευής χρησιμοποιήθηκαν τα παρακάτω υλικά:
 
--   ESP8266 (WeMos Mini)
+-   [ESP8266 (WeMos
+    Mini)](https://www.wemos.cc/en/latest/d1/d1_mini.html)
 
--   Grove - Laser PM2.5 Sensor (HM3301)
+-   [Grove - Laser PM2.5 Sensor
+    (HM3301)](https://wiki.seeedstudio.com/Grove-Laser_PM2.5_Sensor-HM3301/)
 
--   Grove - Multichannel Gas Sensor
+-   [Grove - Multichannel Gas
+    Sensor](https://wiki.seeedstudio.com/Grove-Multichannel_Gas_Sensor/)
 
--   Raspberry Pi 4
+-   [Raspberry Pi
+    4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
 
 -   Breadboard και καλώδια σύνδεσης
 
@@ -64,23 +64,32 @@
 -   Τα παραπάνω λογισμικά εγκαταστάθηκαν και παραμετροποιήθηκαν
     κατάλληλα στο Raspberry Pi 4
 
-## Περίοδος υλοποίησης
+# Παραπομπές
+
+# 
+
+# Περίοδος υλοποίησης
 
 Το έργο υλοποιήθηκε κατά την διάρκεια του δεύτερου τετραμήνου του
 σχολικού έτους 2021-2022.
 
-## Μέλη της ομάδας
+# Μέλη της ομάδας
 
 Τα μέλη της ομάδας ανήκουν στο ΕΠΑΛ Καστοριάς και είναι τα παρακάτω:
 
   -----------------------------------------------------------------------
-  Ονοματεπώνυμο                       Τάξη
+  **Ονοματεπώνυμο**                   **Τάξη**
   ----------------------------------- -----------------------------------
                                       
 
+                                      
+
+                                      
+
+                                      
   -----------------------------------------------------------------------
 
-## Σχολική μονάδα
+# Σχολική μονάδα
 
 ΕΠΑΛ Καστοριάς
 
@@ -90,4 +99,5 @@
 
 Τηλέφωνο: 2467028206
 
-Email: [mail@1epal-kastor.kas.sch.gr](mail@1epal-kastor.kas.sch.gr)
+Email:
+[[mail@1epal-kastor.kas.sch.gr]{.underline}](https://github.com/ththemelis/epal-airquality/blob/main/mail@1epal-kastor.kas.sch.gr)
