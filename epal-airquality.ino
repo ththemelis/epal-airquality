@@ -1,10 +1,13 @@
+// Συσκευή μέτρησης ποιοτικών χαρακτηριστικών του άερα
+// ΕΠΑΛ Καστοριάς
+
 #include <ESP8266WiFiMulti.h>
 #include <Tomoto_HM330X.h>
 #include "SparkFunBME280.h"
 #include "MutichannelGasSensor.h"
 #include <InfluxDbClient.h>
 #include <InfluxDbCloud.h>
-#include "params.h"
+#include "params.h"   // Πρέπει να γίνει μετονομασία του αρχείου params_sample.h σε params.h
 
 BME280 bme280;  // Αντικείμενο αισθητήρα θερμοκρασίας/υγρασίας
 Tomoto_HM330X pm25; // Αντικείμενο αισθητήρα σωματιδίων

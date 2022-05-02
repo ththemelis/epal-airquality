@@ -67,7 +67,14 @@
 
 # Παραπομπές
 
-# 
+-   [Εγκατάσταση ΛΣ στο Raspberry
+    Pi](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview)
+
+-   [Εγκατάσταση
+    InfluxDB](https://docs.influxdata.com/influxdb/v1.8/introduction/install/)
+
+-   [Εγκατάσταση
+    Grafana](https://grafana.com/docs/grafana/latest/installation/debian/)
 
 # Περίοδος υλοποίησης
 
